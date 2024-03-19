@@ -1,0 +1,111 @@
+/* General styles */
+header {
+    text-align: center;
+    background-color: #bb9df7; /* Added background color */
+    height: 120px; /* Added height */
+    width: centered; /* This property doesn't exist, assuming it's meant to center the header horizontally */
+}
+
+
+.company-name {
+    display: inline-block;
+    margin-top: 50px; /* Adjust as needed */
+    margin-bottom: 20px;
+    color: #000000 /* Set the color to grey */
+}
+
+.company-description,
+#meet-our-team h2,
+#leadership-team h2,
+#development-team h2,
+#sales-marketing-team h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+/* Style for the image container */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px; /* Adjust margin top as needed */
+}
+
+/* Style for each leader container */
+.leader-container {
+    width: calc(25% - 20px); /* Adjust the width of each container as needed */
+    margin-bottom: 20px; /* Adjust margin bottom as needed */
+}
+
+/* Style for the leadership images */
+.leadership-image,
+.sales-image,
+.development-image {
+    width: 150px; /* Adjust image width */
+    margin: 10px; /* Adjust margin between images */
+    border-radius: 50%; /* Make the image circular */
+}
+
+/* Container for the first row of images */
+.first-row,
+.second-row {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between the images */
+    width: 100%; /* Ensure full width */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+/* Style for the member container */
+.member-container {
+    text-align: center; /* Center-align the content */
+}
+
+/* Style for each member container */
+.Developer-container,
+.sales-member {
+    width: calc(25% - 20px); /* Adjust the width of each container as needed */
+    margin: 10px; /* Adjust the margin between containers */
+}
+
+/* Style for member name */
+.member-name {
+    font-weight: bold; /* Make the name bold */
+}
+
+/* Style for member role */
+.member-role {
+    font-style: italic; /* Make the role italic */
+}
+/* Set the background color of the web page using gradient */
+body {
+
+    height: 100vh; /* Adjust the height of the gradient */
+    width: 100%;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-image: linear-gradient(45deg, #e6e6fa, #ffffff);
+}
+h2 {
+            background-color:#cacaf5;
+            color: black; /* Text color to contrast with the background */
+            padding: 10px; /* Add padding for better visual */
+            text-align: center; /* Center align the text */
+        }
+
+/* Responsive layout */
+@media screen and (max-width: 768px) {
+    .leader-container,
+    .Developer-container,
+    .sales-member {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .leader-container,
+    .Developer-container,
+    .sales-member {
+        width: calc(100% - 20px);
+    }
+}
